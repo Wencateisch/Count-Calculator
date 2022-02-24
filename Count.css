@@ -1,0 +1,22 @@
+h1{
+    color:rgb(43, 104, 216);
+    padding: 5% 5% 0.5% 30%;
+}
+img:hover{
+    background-color: rgb(0, 255, 106);
+    border-radius: 50%;
+    cursor: pointer;
+}
+body{
+    background-color:whitesmoke;
+}
+.post{
+    display: flex;
+    justify-content:center;
+    padding-top: 100px;
+}
+.post-upvotes{
+        text-align: center;
+        font-size: 30px;
+        color:red;
+}

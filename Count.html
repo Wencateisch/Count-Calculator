@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Count Calculator</title>
+<h1>Count Calculator</h1>
+<link rel="stylesheet" href="./Count.css">
+</head>
+<body>
+    <div class="post">
+    
+        <div class = "post-upvotes">
+        
+            <div class='arrow-up' 
+            onclick ='upvote()'><img src="reshot-icon-bold-arrow-up-XUMCA9L6S5.svg">
+            </div>
+        
+            <div id='votes'>1568</div>
+        
+            <div class='arrow-down'
+            onclick = 'downvote()'><img src="reshot-icon-bold-arrow-down-KDT9R8EHBC.svg">
+            </div> 
+        
+        </div>
+<script>
+function upvote()
+{
+    let votes = document.getElementById('votes');
+    let count = parseInt(votes.innerHTML); // "1000" -> 1000
+    count++; // 1000 -> 1001
+    votes.innerHTML = count;   
+}
+
+function downvote()
+{
+    let votes = document.getElementById('votes');
+    let count = parseInt(votes.innerHTML); // "1000" -> 1000
+    count--; // 1000 -> 999
+    votes.innerHTML = count;   
+}
+</script>
+
+</body>
+</html>
